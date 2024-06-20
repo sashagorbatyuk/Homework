@@ -2,16 +2,27 @@
 # Користувач вводить із клавіатури числа. Програма повинна підраховувати суму, максимум і мінімум введених чисел. 
 # Коли користувач вводить число 7, програма припиняє свою роботу і виводить на екран напис "Good bye!".
 
-number1 = int(input("Enter first number: "))
+sum = 0
+isFirstNumber = True
 
-number2 = int(input("Enter second number: "))
+while True:
+    number = int(input("Enter number: "))
+    
+    if number == 7:
+        print("Good bye!")
+        break
 
-sumresult = (number1+number2)
-minnumber = min(number1, number2)
-maxnumber = max(number1, number2)
+    if isFirstNumber:
+        minNumber = number
+        maxNumber = number
+        isFirstNumber = False
+    else:
+        minNumber = min(number, minNumber)
+        maxNumber = max(number, maxNumber)
 
-print(f"Sum of {number1} and {number2} is: ",sumresult)
+    sum += number
 
-print("Min number is: ",minnumber)
-
-print("Max number is: ", maxnumber)
+    print(f"Sum: ", sum)
+    print("Min number is: ", minNumber)
+    print("Max number is: ", maxNumber)
+    print("================================")

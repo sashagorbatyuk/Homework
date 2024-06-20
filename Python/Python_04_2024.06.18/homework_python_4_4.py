@@ -26,3 +26,4 @@ while True:
     print("Min number is: ", minNumber)
     print("Max number is: ", maxNumber)
     print("================================")
+    

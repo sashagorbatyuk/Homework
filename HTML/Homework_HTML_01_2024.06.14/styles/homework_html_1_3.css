@@ -1,0 +1,27 @@
+body {
+  font-family: sans-serif;
+  background-color: rgb(235,235,235);
+}
+
+h1, h2 {
+  text-align: center;
+}
+
+.black{
+  color:black
+}
+
+.tag{
+  background-color: rgb(210, 210, 210);
+  color:rgb(108, 164, 164)
+}
+
+.redgraybg {
+  color: rgb(172, 68, 68);
+  background-color: rgb(220, 220, 220);
+}
+
+.dottedline{
+  text-decoration: underline;
+  text-decoration-style: dotted;
+}

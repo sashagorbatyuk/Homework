@@ -1,0 +1,18 @@
+body {
+  font-size: 20px;
+  font-family: sans-serif;
+  background-color: rgb(246,246,246);
+}
+
+.black-card {
+  font-size: 40px;
+  padding: 0 7px 0 7px;
+  background-color: rgb(224,223,219);
+}
+
+.red-card {
+  font-size: 40px;
+  padding: 0 7px 0 7px;
+  color: rgb(146,2,2);
+  background-color: rgb(224,223,219);
+}

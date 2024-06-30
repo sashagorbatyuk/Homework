@@ -1,0 +1,14 @@
+body{
+    font-size:20px;
+    background-color: rgb(231, 231, 231);
+}
+
+.gray{
+    color: gray;
+}
+.blue{
+    color:rgb(32, 32, 255)
+}
+div{
+    margin-left: 40px;
+}

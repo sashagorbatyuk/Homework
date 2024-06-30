@@ -1,0 +1,66 @@
+body {
+    background-color: rgb(194, 194, 194);
+    font-size:20px;
+    line-height:20px;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    cursor: pointer;
+    position: relative;
+    padding: 12px 8px 12px 40px;
+    background: #eee;
+}
+
+ul li:nth-child(odd) {
+    background: #f9f9f9;
+}
+
+ul li.checked {
+    background: #999;
+    text-decoration: line-through;
+}
+
+ul li::before {
+    content: url(images/unchecked_16.png);
+    padding-right: 20px;
+}
+
+ul li.checked::before {
+    content: url(images/checked_16.png);
+    padding-right: 20px;
+}
+
+ul li.checked::after {
+    padding-left: 20px;
+    content: url();
+    text-decoration:overline !important;
+    color: red
+}
+
+div {
+    background-color: rgb(194, 194, 194);
+    margin:0;
+}
+
+.unblue {
+    background-color: rgb(128, 159, 194);
+    padding: 14px;
+    padding-left: 35px;
+}
+
+.undone {
+    background-color: rgb(95, 140, 192);
+    padding:14px;
+    padding-left: 35px;
+}
+
+.done {
+    background-color: rgb(163, 163, 163);
+    padding:14px;
+    padding-left: 35px;
+}

@@ -30,24 +30,26 @@ ul li:nth-child(even) {
     background: rgb(173, 217, 230);
 }
 
-ul li.checked {
-    background: rgb(220, 220, 220);
-    text-decoration: line-through;
-}
-
 ul li::before {
     content: url(../images/unchecked_16.png);
     padding-right: 20px;
 }
 
+ul li::after {
+    position: absolute;
+    padding-left: 20px;
+    font-size: 22px;
+    font-weight: 600;
+    content: "×";
+    color: rgb(180, 60, 60);
+}
+
+ul li.checked {
+    background: rgb(220, 220, 220);
+    text-decoration: line-through;
+}
+
 ul li.checked::before {
     content: url(../images/checked_16.png);
     padding-right: 20px;
-}
-
-ul li.checked::after {
-    padding-left: 20px;
-    content: url();
-    text-decoration:overline !important;
-    color: red
 }

@@ -13,5 +13,6 @@ elements_count = Counter(elements_list)
 # Знайдемо найчастіші елементи
 most_common_elements = elements_count.most_common()
 
+print("Список всіх елементів:", elements_list)
 print("Унікальні елементи:", unique_elements_set)
 print("Найчастіші елементи:", most_common_elements)

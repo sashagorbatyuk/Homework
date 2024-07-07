@@ -1,0 +1,58 @@
+#page{
+    color:white;
+    margin:0px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+}
+
+header, #aside1, #aside2, #content, #right-sidebar {
+    padding: 20px;
+    margin-bottom: 10px;
+    background-color: rgb(168, 62, 104);
+}
+
+#aside1, #aside2, #aside3 {
+    min-height: 30px;
+}
+
+#aside3 {
+    writing-mode: vertical-rl;
+    text-orientation: upright;
+}
+
+#menu, #page-footer {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: rgb(116, 41, 71);
+}
+
+#content {
+    margin: 0 10px 10px 10px;
+    padding: 20px 30px;
+    min-height: 300px;
+    width: calc(100% - 410px);
+}
+
+#left-sidebar {
+    width: 200px;
+    float: left;
+}
+
+#content {
+    display: inline-block;
+}
+
+#right-sidebar {
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    width: 90px;
+    float: right;
+}
+
+article {
+    margin: 10px 0;
+    padding: 10px;
+    min-height: 50px;
+    background-color: rgb(209, 116, 153);
+}

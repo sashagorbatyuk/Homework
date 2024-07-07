@@ -1,0 +1,41 @@
+body {
+    font-family: sans-serif;
+}
+
+.content {
+    padding: 20px;
+}
+
+ul, li {
+  list-style: none;
+  -webkit-padding-start: 0;
+}
+
+img {
+    vertical-align:baseline;
+    width: 50px;
+    height: 50px;
+    padding: 0 10px;
+}
+
+.menu {
+    display: block;
+    position: relative;
+    background-color: gray;
+    width: 190px;
+    margin: 0;
+}
+
+.menu .menu-item {
+    display: flex;
+    height: 65px;
+    cursor: pointer;
+    align-items: center;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.menu .menu-item:hover {
+    background-color: rgb(84, 84, 84);
+}

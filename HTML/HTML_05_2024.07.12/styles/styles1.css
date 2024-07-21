@@ -1,0 +1,36 @@
+table, tbody, thead, th, td {
+    overflow-x: visible;
+    border-spacing: 0;
+    width: 800px;
+}
+
+th, td {
+    /* top: 0;
+    position: sticky; */
+    text-align: center;
+    padding: 10px;
+}
+
+tr:nth-child(even) {
+    background: #f0f0f0;
+}
+
+th {
+    position: sticky;
+    background: #b0d9e5;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+table th:first-child {
+    z-index: 2;
+}
+
+table td:first-child {
+    position: sticky;
+    background: #b0d9e5;
+    left: 0;
+  }
+
+

@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+    margin: 0;
+}
+
+.plans-container {
+    display: flex;
+    gap: 20px;
+}
+
+.plan {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+    padding: 20px;
+    transition: transform 1s;
+    width: 210px;
+}
+
+.plan:hover {
+    transform: scale(1.2);
+}
+
+.plan h2 {
+    margin: 0;
+    padding: 10px 0;
+    font-weight: bold;
+}
+.plan .price {
+    font-size: 24px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+.plan .price span {
+    font-size: 14px;
+    color: #9f9f9f;
+    display: block;
+    opacity: 0.7;
+}
+.plan ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+    font-weight: bold;
+}
+.plan ul li {
+    margin: 10px 0;
+}
+.plan .buy-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+.plan-enterprise .buy-button {
+    background-color: #d9534f;
+}
+.plan-professional .buy-button {
+    background-color: #f0ad4e;
+}
+.plan-standard .buy-button {
+    background-color: #5bc0de;
+}
+.plan-basic .buy-button {
+    background-color: #5cb85c;
+}
+.plan-enterprise h2 {
+    border-bottom: 2px solid #d9534f;
+}
+.plan-professional h2 {
+    border-bottom: 2px solid #f0ad4e;
+}
+.plan-standard h2 {
+    border-bottom: 2px solid #5bc0de;
+}
+.plan-basic h2 {
+    border-bottom: 2px solid #5cb85c;
+}

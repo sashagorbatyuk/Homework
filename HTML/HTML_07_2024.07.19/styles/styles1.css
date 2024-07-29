@@ -1,0 +1,122 @@
+body {
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    color:black;
+}
+.upload-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 2px 20px 2px 20px;
+    max-width: 800px;
+    margin: 20px auto;
+}
+.upload-image {
+    box-shadow: black;
+    flex: 0 0 auto;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.upload-image img{
+    padding: 10px;
+    width: 120%;
+    height: 70%;
+    object-fit: cover;
+}
+.upload-info {
+    flex: 2;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-top: -28px;
+}
+.progress-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.upload-info .progress-bar {
+    flex: 1;
+    width: 500px;  /* Фіксована ширина прогрес-бару */
+    background-color: #f3f3f3;
+    border: 1px solid #ccc;
+    height: 24px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    margin-right: 10px;
+}
+.upload-info .progress {
+    width: 40%;
+    background-color: #d6dae5;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+}
+.upload-info .status {
+    margin-left: auto;
+}
+.upload-info .title {
+    margin: 10px 0;
+}
+.upload-info .note {
+    font-size: 0.9em;
+    color: #555;
+}
+.upload-button {
+    flex: 0 0 auto;
+    margin-left: 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+.upload-button button {
+    background-color: #4664a2;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+@media (max-width: 850px) {
+    .upload-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .upload-info {
+        padding: 20px 0;
+        align-items: center;
+    }
+    .progress-container {
+        line-height: 200%;
+        width: 100px;
+        flex-direction: column;
+        align-items: center;
+    }
+    .upload-info .progress-bar {
+        width: 500px;
+    }
+    .upload-button {
+        margin-left: 0;
+        margin-top: 30px;
+        justify-content: center;
+    }
+    .upload-info .title .note {
+        font-size: 0.8em;
+        text-align: center;
+    }
+    img{
+        width: 20%;
+        height:200%;
+    }
+    .upload-button{
+        width: 300px;
+    }
+}

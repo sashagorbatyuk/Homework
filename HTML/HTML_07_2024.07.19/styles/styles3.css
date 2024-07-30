@@ -6,46 +6,134 @@ body, html {
     box-sizing: border-box;
 }
 
-.container {
+.page {
     display: flex;
     height: 100%;
 }
 
 .sidebar {
-    width: 250px;
-    background-color: #2c3e50;
+    width: 200px;
+    min-width: 200px;
+    background-color: rgb(51, 51, 51);
     color: white;
-    padding: 20px;
-    position: fixed;
-    height: 100%;
+}
+
+.sidebar .logo {
+    display: flex;
+    justify-content: center;
+}
+
+.sidebar img {
+    width: 100px;
+    margin: 20px 0;
 }
 
 .content {
-    margin-left: 250px;
-    padding: 20px;
-    width: calc(100% - 250px);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: flex-start;
+    background-color: #ecf0f1;
+}
+
+.content h2 {
+    width: 100%;
+    margin: 20px;
+}
+
+.chart img {
+    width: 110px;
+}
+
+.chart {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: calc(50% - 60px);
+}
+
+.chart-1 {
+    margin-right: 10px !important;
+}
+
+.chart-2 {
+    margin-left: 10px !important;
+}
+
+.table {
+    width: 100%;
 }
 
 .chart, .table {
-    margin: 20px 0;
-    background-color: #ecf0f1;
+    margin: 10px 20px;
+    background-color: white;
     padding: 15px;
     border-radius: 5px;
 }
 
-@media (max-width: 768px) {
-    .container {
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 0;
+    padding: 20px 40px;
+    border-top: 1px solid rgb(41, 41, 41);
+}
+
+@media only screen and (max-width: 600px) {
+    .page {
         flex-direction: column;
     }
-
     .sidebar {
         width: 100%;
-        position: relative;
-        height: auto;
+    }
+    .sidebar img {
+        width: 50px;
+    }
+    .sidebar ul li {
+        padding: 10px 40px;
+    }
+    .chart {
+        width: 100%;
+    }
+    .chart {
+        margin-right: 10px !important;
+    }    
+    .chart {
+        margin: 10px 20px !important;
+    }
+}
+
+table {
+    border-spacing: 1; 
+    border-collapse: collapse; 
+    background:white;
+    border-radius:6px;
+    overflow:hidden;
+    max-width:1400px; 
+    width:100%;
+    margin:0 auto;
+    position:relative;
+
+    * { position:relative }
+    td,th { padding-left:8px}
+    thead tr { 
+      height:60px;
+      font-size:16px;
     }
 
-    .content {
-        margin-left: 0;
-        width: 100%;
+    tbody tr { 
+        height:48px; border-bottom:1px solid #E3F1D5;
+        &:last-child  { border:0; }
+    }
+
+    td,th { text-align:left;
+        &.l { text-align:right }
+        &.c { text-align:center }
+        &.r { text-align:center }
     }
 }

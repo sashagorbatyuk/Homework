@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Динозаврик Гра</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        canvas {
+            border: 1px solid black;
+            display: block;
+            margin: 20px auto;
+            background-color: white;
+        }
+
+        #game-over {
+            display: none;
+        }
+
+        #score {
+            font-size: 24px;
+            margin-top: 20px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 18px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Гра Динозаврик</h1>
+    <canvas id="gameCanvas" width="800" height="200"></canvas>
+    <div id="score">Рахунок: <span id="scoreValue">0</span></div>
+    <div id="game-over">
+        <h2>Гру завершено!</h2>
+        <p>Ваш результат: <span id="finalScore">0</span></p>
+        <button onclick="restartGame()">Спробувати ще раз</button>
+    </div>
+
+    <script>
+        const canvas = document.getElementById('gameCanvas');
+        const ctx = canvas.getContext('2d');
+
+        let dino = {
+            x: 50,
+            y: canvas.height - 60,
+            width: 40,
+            height: 40,
+            vy: 0,
+            gravity: 1.5,
+            jumpPower: -20,
+            isJumping: false
+        };
+
+        let obstacle = {
+            x: canvas.width,
+            y: canvas.height - 40,
+            width: 20,
+            height: 40,
+            speed: 8
+        };
+
+        let score = 0;
+        let gameOver = false;
+
+        function drawDino() {
+            ctx.fillStyle = 'black';
+            ctx.fillRect(dino.x, dino.y, dino.width, dino.height);
+        }
+
+        function drawObstacle() {
+            ctx.fillStyle = 'green';
+            ctx.fillRect(obstacle.x, obstacle.y, obstacle.width, obstacle.height);
+        }
+
+        function update() {
+            if (gameOver) return;
+
+            dino.y += dino.vy;
+            dino.vy += dino.gravity;
+
+            if (dino.y > canvas.height - dino.height) {
+                dino.y = canvas.height - dino.height;
+                dino.isJumping = false;
+            }
+
+            obstacle.x -= obstacle.speed;
+
+            if (obstacle.x < 0) {
+                obstacle.x = canvas.width;
+                score++;
+                document.getElementById('scoreValue').textContent = score;
+            }
+
+            if (
+                dino.x < obstacle.x + obstacle.width &&
+                dino.x + dino.width > obstacle.x &&
+                dino.y < obstacle.y + obstacle.height &&
+                dino.height + dino.y > obstacle.y
+            ) {
+                gameOver = true;
+                document.getElementById('finalScore').textContent = score;
+                document.getElementById('game-over').style.display = 'block';
+            }
+        }
+
+        function jump() {
+            if (!dino.isJumping) {
+                dino.vy = dino.jumpPower;
+                dino.isJumping = true;
+            }
+        }
+
+        function restartGame() {
+            score = 0;
+            document.getElementById('scoreValue').textContent = score;
+            obstacle.x = canvas.width;
+            gameOver = false;
+            document.getElementById('game-over').style.display = 'none';
+            requestAnimationFrame(gameLoop);
+        }
+
+        function gameLoop() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            drawDino();
+            drawObstacle();
+            update();
+
+            if (!gameOver) {
+                requestAnimationFrame(gameLoop);
+            }
+        }
+
+        document.addEventListener('keydown', function(event) {
+            if (event.code === 'Space' || event.code === 'ArrowUp') {
+                jump();
+            }
+        });
+
+        document.addEventListener('touchstart', function() {
+            jump();
+        });
+
+        requestAnimationFrame(gameLoop);
+    </script>
+
+<p>Поділіться своїм результатом: 
+    <button onclick="copyScore()">Копіювати результат</button>
+</p>
+
+<script>
+function copyScore() {
+    const scoreText = `Мій результат у грі "Динозаврик": ${score} очків!`;
+    navigator.clipboard.writeText(scoreText).then(() => {
+        alert('Результат скопійовано!');
+    });
+}
+</script>
+
+</body>
+</html>

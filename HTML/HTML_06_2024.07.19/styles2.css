@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.article {
+    flex: 1 1 60%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.sidebar {
+    flex: 1 1 30%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.actions, .plans {
+    padding: 20px;
+    border-radius: 15px; /* Додаємо круглі кути */
+    background-color: #003366; /* Темно-синій фон */
+    color: #e0e0e0; /* Світліший текст */
+}
+
+.sidebar h3 {
+    margin-top: 0;
+    color: #ffffff; /* Білий колір для заголовків */
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    background: #eee;
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 5px solid #333;
+    border-bottom: 1px solid #ccc; /* Додаємо нижню лінію */
+    border-radius: 5px; /* Додаємо круглі кути до елементів списку */
+}
+
+.sidebar ul li:last-child {
+    border-bottom: none; /* Прибираємо нижню лінію у останнього елементу */
+}
+
+@media (max-width: 768px) {
+    .article, .sidebar {
+        flex: 1 1 100%;
+        margin-left: 0;
+    }
+    .sidebar {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 10px;
+    }
+    .actions, .plans {
+        flex: 1 1 50%;
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        flex-direction: column;
+    }
+    .actions, .plans {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+}

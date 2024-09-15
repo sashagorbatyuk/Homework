@@ -5,6 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Task 1</title>
     <link rel="stylesheet" href="styles1.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #e0f0ff;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: nowrap; /* Забороняємо колонкам переноситися на новий рядок */
+            justify-content: space-between;
+            padding: 10px;
+            overflow-x: auto; /* Додаємо горизонтальний скролл при необхідності */
+        }
+
+        .column {
+            flex: 0 0 33%; /* Встановлюємо фіксовану ширину для колонок */
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .news-item {
+            background-color: rgba(255, 255, 255, 0.9); /* Білий фон з невеликим затемненням */
+            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Стилі для зображень різних розмірів */
+        .news-item img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .img-small {
+            height: 80px;  /* Зображення 350x100 */
+        }
+
+        .img-medium {
+            height: 120px; /* Зображення 350x150 */
+        }
+
+        .img-large {
+            height: 160px; /* Зображення 350x220 */
+        }
+
+        .img-larger {
+            height: 180px; /* Зображення 350x230 */
+        }
+
+        .img-largest {
+            height: 260px; /* Зображення 350x350 */
+        }
+
+        .news-title {
+            font-size: 20px; /* Збільшення розміру шрифту */
+            font-weight: bold;
+            margin: 15px 10px 10px; /* Відступи */
+            color: #333; /* Темніший текст */
+        }
+
+        .news-content {
+            font-size: 16px; /* Збільшення розміру шрифту */
+            padding: 0 10px 10px;
+            color: #555; /* Темно-сірий текст */
+            line-height: 1.6; /* Збільшення міжрядкової відстані */
+        }
+    </style>
 </head>
 <body>
     <div class="container">

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Upload</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: left;
+        }
+        .upload-container {
+            background-color: white;
+            border: 1px solid #ccc;
+            padding: 10px;
+            border-radius: 5px;
+            width: 80%;
+            max-width: 800px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .upload-image {
+            width: 60px;
+            height: 60px;
+            background-color: #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .upload-image img {
+            max-width: 100%;
+            max-height: 100%;
+        }
+        .upload-info {
+            width: 100%;
+        }
+        .progress-bar {
+            background-color: #ddd;
+            border-radius: 5px;
+            overflow: hidden;
+            height: 20px;
+            margin: 10px 0;
+            position: relative;
+            width: 100%;
+        }
+        .progress {
+            border-width: 10px;
+            border-color: #0056b3;
+            background-color: #0060c6;
+            opacity: 0.3;
+            height: 100%;
+            width: 40%;
+        }
+        .progress-text {
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            color: black;
+        }
+        .button-block {
+            margin-top: 10px;
+        }
+        .button-block button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button-block button:hover {
+            background-color: #0056b3;
+        }
+        @media (min-width: 600px) {
+            .upload-container {
+                flex-direction: row;
+                align-items: center;
+            }
+            .upload-image {
+                margin-right: 20px;
+                margin-bottom: 0;
+            }
+            .upload-info {
+                text-align: left;
+                flex: 1;
+            }
+            .button-block {
+                margin-left: 20px;
+                margin-top: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="upload-container">
+        <div class="upload-image">
+            <img src="upload_icon.png" alt="Upload Icon">
+        </div>
+        <div class="upload-info">
+            <div class="progress-bar">
+                <div class="progress"></div>
+                <div class="progress-text">UPLOADING 40%</div>
+            </div>
+            <p><b>Title of video</b></p>
+            <p>* Your video is still uploading. Please keep this page open until it's done.</p>
+        </div>
+        <div class="button-block">
+            <button type="button">DONE</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -6,13 +6,13 @@ using namespace std;
 /// Завдання 4. Написати функцію, що виводить на екран передану їй гральну карту.
 /// </summary>
 void displayCard(string rank, string suit) {
-    cout << "************" << endl;
+    cout << "*************" << endl;
     cout << "* " << rank << "        *" << endl;
-    cout << "*          *" << endl;
-    cout << "*    " << suit << "    *" << endl;
-    cout << "*          *" << endl;
+    cout << "*           *" << endl;
+    cout << "*     " << suit << "     *" << endl;
+    cout << "*           *" << endl;
     cout << "*        " << rank << " *" << endl;
-    cout << "************" << endl;
+    cout << "*************" << endl;
 }
 
 int main() {

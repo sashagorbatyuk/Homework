@@ -1,7 +1,7 @@
 #include <iostream>
 #include <algorithm>
 
-using namespace std;  // Додаємо using namespace std
+using namespace std;
 
 // Функція для ініціалізації квадратної матриці (перевантажена для int, double, char)
 void initializeMatrix(int** matrix, int size) {

@@ -1,0 +1,3 @@
+Lake Michigan,Lake,307,494,281
+Black Sea,Sea,1000,4000,2212
+Swimming Pool,Pool,25,10,2

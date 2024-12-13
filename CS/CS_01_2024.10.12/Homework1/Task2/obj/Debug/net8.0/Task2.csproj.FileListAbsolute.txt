@@ -1,0 +1,15 @@
+C:\step\Homework_git\C#\C#_01_2024.10.12\Homework1\Task2\bin\Debug\net8.0\Task2.exe
+C:\step\Homework_git\C#\C#_01_2024.10.12\Homework1\Task2\bin\Debug\net8.0\Task2.deps.json
+C:\step\Homework_git\C#\C#_01_2024.10.12\Homework1\Task2\bin\Debug\net8.0\Task2.runtimeconfig.json
+C:\step\Homework_git\C#\C#_01_2024.10.12\Homework1\Task2\bin\Debug\net8.0\Task2.dll
+C:\step\Homework_git\C#\C#_01_2024.10.12\Homework1\Task2\bin\Debug\net8.0\Task2.pdb
+C:\step\Homework_git\C#\C#_01_2024.10.12\Homework1\Task2\obj\Debug\net8.0\Task2.GeneratedMSBuildEditorConfig.editorconfig
+C:\step\Homework_git\C#\C#_01_2024.10.12\Homework1\Task2\obj\Debug\net8.0\Task2.AssemblyInfoInputs.cache
+C:\step\Homework_git\C#\C#_01_2024.10.12\Homework1\Task2\obj\Debug\net8.0\Task2.AssemblyInfo.cs
+C:\step\Homework_git\C#\C#_01_2024.10.12\Homework1\Task2\obj\Debug\net8.0\Task2.csproj.CoreCompileInputs.cache
+C:\step\Homework_git\C#\C#_01_2024.10.12\Homework1\Task2\obj\Debug\net8.0\Task2.sourcelink.json
+C:\step\Homework_git\C#\C#_01_2024.10.12\Homework1\Task2\obj\Debug\net8.0\Task2.dll
+C:\step\Homework_git\C#\C#_01_2024.10.12\Homework1\Task2\obj\Debug\net8.0\refint\Task2.dll
+C:\step\Homework_git\C#\C#_01_2024.10.12\Homework1\Task2\obj\Debug\net8.0\Task2.pdb
+C:\step\Homework_git\C#\C#_01_2024.10.12\Homework1\Task2\obj\Debug\net8.0\Task2.genruntimeconfig.cache
+C:\step\Homework_git\C#\C#_01_2024.10.12\Homework1\Task2\obj\Debug\net8.0\ref\Task2.dll

@@ -141,7 +141,7 @@ async def handle_text(update: Update, context):
 
 # Основна функція для запуску бота
 def main():
-    application = Application.builder().token("6386556567:AAEmag-uPIKt2I-lkdxraFAO6QOskq_m5m8").build()
+    application = Application.builder().token("").build()
 
     # Додаємо обробники
     application.add_handler(CommandHandler("start", start))

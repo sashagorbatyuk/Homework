@@ -1,0 +1,88 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\step\\Homework_git\\CS\\CS_05_2025.15.12\\Homework5\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4FA11D7C-45AF-43A1-81BE-C226618A23CE}|Task4\\Task4.csproj|c:\\step\\homework_git\\cs\\cs_05_2025.15.12\\homework5\\task4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4FA11D7C-45AF-43A1-81BE-C226618A23CE}|Task4\\Task4.csproj|solutionrelative:task4\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{617DDBCA-0F8E-41A4-89A0-3E9B6F8208F8}|Task3\\Task3.csproj|c:\\step\\homework_git\\cs\\cs_05_2025.15.12\\homework5\\task3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{617DDBCA-0F8E-41A4-89A0-3E9B6F8208F8}|Task3\\Task3.csproj|solutionrelative:task3\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{212D0C92-3D82-41E2-B038-1B8A085DEFD2}|Task2\\Task2.csproj|c:\\step\\homework_git\\cs\\cs_05_2025.15.12\\homework5\\task2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{212D0C92-3D82-41E2-B038-1B8A085DEFD2}|Task2\\Task2.csproj|solutionrelative:task2\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{700E5816-BEC2-45FD-A3E5-C25FDD61E5F9}|Task1\\Task1.csproj|c:\\step\\homework_git\\cs\\cs_05_2025.15.12\\homework5\\task1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{700E5816-BEC2-45FD-A3E5-C25FDD61E5F9}|Task1\\Task1.csproj|solutionrelative:task1\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\step\\Homework_git\\CS\\CS_05_2025.15.12\\Homework5\\Task4\\Program.cs",
+              "RelativeDocumentMoniker": "Task4\\Program.cs",
+              "ToolTip": "C:\\step\\Homework_git\\CS\\CS_05_2025.15.12\\Homework5\\Task4\\Program.cs",
+              "RelativeToolTip": "Task4\\Program.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAA0wDoAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T17:53:16.102Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\step\\Homework_git\\CS\\CS_05_2025.15.12\\Homework5\\Task3\\Program.cs",
+              "RelativeDocumentMoniker": "Task3\\Program.cs",
+              "ToolTip": "C:\\step\\Homework_git\\CS\\CS_05_2025.15.12\\Homework5\\Task3\\Program.cs",
+              "RelativeToolTip": "Task3\\Program.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAA8wEUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T17:53:08.803Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\step\\Homework_git\\CS\\CS_05_2025.15.12\\Homework5\\Task2\\Program.cs",
+              "RelativeDocumentMoniker": "Task2\\Program.cs",
+              "ToolTip": "C:\\step\\Homework_git\\CS\\CS_05_2025.15.12\\Homework5\\Task2\\Program.cs",
+              "RelativeToolTip": "Task2\\Program.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAA4wCoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T17:52:56.271Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\step\\Homework_git\\CS\\CS_05_2025.15.12\\Homework5\\Task1\\Program.cs",
+              "RelativeDocumentMoniker": "Task1\\Program.cs",
+              "ToolTip": "C:\\step\\Homework_git\\CS\\CS_05_2025.15.12\\Homework5\\Task1\\Program.cs",
+              "RelativeToolTip": "Task1\\Program.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAwwEIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T17:52:48.006Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Desktop.png" />
+    <None Remove="ezgif-5eb0f997f8d2af.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Desktop.png" />
+    <Resource Include="ezgif-5eb0f997f8d2af.png" />
+  </ItemGroup>
+
+</Project>

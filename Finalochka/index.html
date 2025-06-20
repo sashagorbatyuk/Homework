@@ -1,0 +1,45 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Weather</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>MY WEATHER</h1>
+        <input type="text" id="cityInput" placeholder="Enter city...">
+        <button id="searchBtn">Search</button>
+    </header>
+
+    <nav>
+        <button class="tab-button active" data-tab="today">Today</button>
+        <button class="tab-button" data-tab="forecast">5-day forecast</button>
+    </nav>
+
+    <main>
+        <!-- TODAY TAB -->
+        <section id="today" class="tab-content active">
+            <div id="today-summary"></div>
+            <div id="today-hourly"></div>
+            <div id="nearby-cities"></div>
+        </section>
+
+        <!-- FORECAST TAB -->
+        <section id="forecast" class="tab-content">
+            <div id="forecast-days"></div>
+            <div id="forecast-hourly"></div>
+        </section>
+
+        <!-- 404 ERROR -->
+        <section id="error" class="tab-content">
+            <h2>404</h2>
+            <p>City could not be found. Please enter a different location.</p>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
